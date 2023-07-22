@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Table } from "antd";
 import moment from "moment";
 
-function UsernameReposTable({ dataSource }) {
+function UsernameReposTable({ dataSource, ...props }) {
   const columns = [
     {
       title: "Index",
@@ -19,16 +19,13 @@ function UsernameReposTable({ dataSource }) {
       title: "Updated At",
       dataIndex: "updated_at",
       key: "updated_at",
-      render: (_, record) => {
-        moment(record.updated_at).format("YYYY-MM-DD");
-      },
+      render: (_, record) => moment(record.updated_at).format("YYYY-MM-DD"),
     },
     {
       title: "Operation",
       dataIndex: "operation",
       key: "operation",
       render: (_, record) => {
-        console.log("----record", record);
         return (
           <Button type='link' key={record.id}>
             View Detail
