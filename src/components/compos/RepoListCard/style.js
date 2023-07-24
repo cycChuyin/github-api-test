@@ -9,10 +9,6 @@ const LanguageColor = [
   { lang: "TypeScript", color: "#3178c6" },
 ];
 
-export const ErrorMsgText = styled.p`
-  color: #ff0000;
-`;
-
 export const RepoLanguageColor = styled.span`
   display: inline-block;
   width: 12px;
@@ -27,13 +23,29 @@ export const RepoLanguageColor = styled.span`
   }};
 `;
 
-export const SelectContainer = styled.div`
-  color: "#CFC5BC";
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
+export const Container = styled.div`
+  .ant-list-item {
+    color: #41464f;
+    width: 100%;
+    margin: 8px auto;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeae8;
+    border-radius: 8px;
 
-  p {
-    margin-right: 8px;
+    &:hover {
+      background-color: #dbd6d0;
+      cursor: pointer;
+    }
+
+    > div {
+      width: 100%;
+    }
+
+    h3,
+    p {
+      margin: 0;
+    }
   }
 `;
