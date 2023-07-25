@@ -4,7 +4,7 @@ This project is to integrate with the GitHub API, retrieve the entered username,
 
 **Framework** 
 * React: v18.2.0
-* antd: ^5.7.2
+* antd: v5.7.2
 
 ## Install
 The following will guide you on how to install this project on your computer.
