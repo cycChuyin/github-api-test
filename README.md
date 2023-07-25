@@ -16,7 +16,7 @@ The following will guide you on how to install this project on your computer.
 
 ### Get project
 ```
-git clone git@github.com:cycChuyin/github-api-test.git
+git clone https://github.com/cycChuyin/github-api-test.git
 ```
 
 ### To move into the project
